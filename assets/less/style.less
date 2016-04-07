@@ -1,0 +1,55 @@
+@lightRed:   #fdd;
+@lightGreen: #dfd;
+@lightBlue:  #ddf;
+@defaultBg: @lightBlue;
+@highPixelValue: 9999px;
+@mediumSizePadding: 50px;
+@defaultShapesWidth:200px;
+@borderSize:@defaultShapesWidth * 0.07;
+@borderColor:@defaultBg - #222;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.shape {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: @defaultBg;
+    margin: 20px;
+    &:hover{
+        background:@lightRed;
+    }
+}
+
+.content_holder {
+    text-align: center;
+}
+
+@defaultRadius:30px;
+
+.RoundedShape(@radius:@defaultRadius) {
+    border:@borderSize solid @borderColor;
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+}
+
+.Circle {
+    .RoundedShape(9999px);
+}
+
+
+#shape1 {
+    .Circle
+}
+
+#shape2 {
+    .RoundedShape
+}
+
+#shape3 {
+    .RoundedShape(60px)
+}
