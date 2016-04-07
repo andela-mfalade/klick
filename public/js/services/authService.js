@@ -1,6 +1,5 @@
 ( function() {
-//-- BOL
-
+//--
 
     angular.module('klick.services', [])
     .factory('auth', auth);
@@ -13,6 +12,5 @@
         }
     }
 
-
-//-- EOL
+//-- 
 } )();

@@ -1,6 +1,5 @@
 ( function () {
-//-- BOL
-
+//--
 
     angular
         .module('klick.router', [])
@@ -26,6 +25,5 @@
 
         }
 
-
-//-- EOL
+//--
 } )();

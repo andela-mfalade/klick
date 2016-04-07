@@ -1,6 +1,5 @@
 ( function () {
-//-- BOL
-
+//--
 
     angular
         .module('klick', [
@@ -10,6 +9,5 @@
             'klick.controllers'
         ]);
 
-
-//-- EOL
+//--
 } )();
