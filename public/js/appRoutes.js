@@ -1,6 +1,7 @@
 ( function () {
 //-- BOL
 
+
     angular
         .module('klick.router', [])
         .config(config);
@@ -24,6 +25,7 @@
             });
 
         }
+
 
 //-- EOL
 } )();

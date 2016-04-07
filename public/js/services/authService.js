@@ -1,10 +1,18 @@
-angular.module('klick.services', [])
+( function() {
+//-- BOL
+
+
+    angular.module('klick.services', [])
     .factory('auth', auth);
 
-function auth() { return authUtils; };
+    function auth() { return authUtils; };
 
-var authUtils = {
-    login: function () {
-        console.log("Hello there.This is one shitty hell of a service.")
+    var authUtils = {
+        login: function () {
+            console.log("Hello there.This is one shitty hell of a service.")
+        }
     }
-}
+
+
+//-- EOL
+} )();

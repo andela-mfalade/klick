@@ -1,6 +1,7 @@
 ( function () {
 //- BOL
 
+
     angular
         .module('klick.controllers', ['klick.services'])
         .controller('homeController', homeController);
@@ -15,6 +16,7 @@
             }
 
         }
+
 
 //- EOL
 } )();
