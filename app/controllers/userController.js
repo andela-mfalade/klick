@@ -1,8 +1,13 @@
-var userUtils = {
-    loginUser: function (req, res) {
-        console.log(req.body);
-        res.send({hello: "This works too"});
+'use strict';
+var userModel = require('../models/user');
+
+var utils = {
+    fetchUser: function(req, res) {
+        var username = req.body.username;
+        var response = userModel.retrieveUserInfo(username, function (userDetails) {
+            res.send(userDetails);
+        });
     }
 }
 
-module.exports = userUtils;
+module.exports = utils;
