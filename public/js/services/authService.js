@@ -1,16 +1,22 @@
 ( function() {
 //--
 
-    angular.module('klick.services', [])
-    .factory('auth', auth);
+    angular
+        .module('klick.services', [])
+        .factory('auth', auth);
 
-    function auth() { return authUtils; };
+    auth.$inject = ['$http', 'options']
 
-    var authUtils = {
-        login: function () {
-            console.log("Hello there.This is one shitty hell of a service.")
+    function auth($http, options) {
+        function login(username) {
+            reqUrl = options.API_URL + 'users'
+            $http.post(reqUrl, {username: username})
+                .then(function(response) {
+                    console.log(response);
+                })
         }
+        return { login: login };
     }
 
-//-- 
+//--
 } )();
