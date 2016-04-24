@@ -16,6 +16,6 @@
     "jquery": "^2.2.3",
     "method-override": "^2.3.5",
     "mongoose": "^4.4.11",
-    "mssql": "^3.1.2"
+    "mysql": "^2.5.4"
   }
 }

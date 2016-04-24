@@ -5,7 +5,7 @@ function routerConfig() {
     var apiRouter = express.Router({ mergeParams: true });
 
     apiRouter.route('/users')
-        .post(userUtils.loginUser);
+        .post(userUtils.fetchUser);
 
     return apiRouter;
 }
