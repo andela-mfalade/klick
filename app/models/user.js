@@ -6,8 +6,7 @@ var connection = mysql.createConnection(dbCred);
 var processor = {retrieveUserInfo: retrieveUserInfo};
 
 function retrieveUserInfo(username, cb) {
-    var query = "SELECT * from userinfo WHERE username='" + username + "'";
-    var res = null;
+    var query = "SELECT * from userinfo WHERE username=$1" + username + "'";
     connection.query(query, function(err, rows, fields) {
         if (!err) {
             if (rows === undefined || rows.length == 0) {

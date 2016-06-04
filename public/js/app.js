@@ -1,12 +1,10 @@
-( function () {
+    ( function () {
 //--
 
-    angular
-        .module('klick', [
+    angular.module('klick', [
             'ui.router',
-            'klick.router',
-            'klick.services',
-            'klick.controllers'
+            'ngCookies',
+            'klick.router'
         ]);
 
 //--

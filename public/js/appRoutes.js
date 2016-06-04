@@ -17,13 +17,13 @@
         .state('/', {
             url: '/',
             templateUrl: 'views/home.html',
-            controller: 'homeController'
+            controller: 'loginController'
         })
 
         .state('userPage', {
-            url: '/user',
-            templateUrl: 'views/userPage.html',
-            controller: 'userCtrl'
+            url: '/dashboard',
+            templateUrl: 'views/dashboard.html',
+            controller: 'dashboardController'
         });
 
     }

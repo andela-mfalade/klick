@@ -19,6 +19,9 @@
     "angular-material": "~1.0.7",
     "jquery": "~2.2.3",
     "ui-router": "~0.2.18",
-    "angular-ui-router": "~0.2.18"
+    "angular-ui-router": "~0.2.18",
+    "bower": "*",
+    "install": "~1.0.4",
+    "angular-cookies": "~1.5.3"
   }
 }
